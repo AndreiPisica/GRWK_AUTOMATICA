@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{69070AD6-5285-4E38-BDE6-7051290B1861}</ProjectGuid>
+    <ProjectTypeGuids>{96E2B04D-8817-42c6-938A-82C39BA4D311};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <OutputPath>bin\$(Platform)\$(Configuration)</OutputPath>
+    <ContentRootDirectory>Content</ContentRootDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>KinectGameContent</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DigitalRune">
+      <HintPath>..\..\..\DigitalRune-Engine\References\XNA\Windows\DigitalRune.dll</HintPath>
+    </Reference>
+    <Reference Include="DigitalRune.Animation">
+      <HintPath>..\..\..\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Animation.dll</HintPath>
+    </Reference>
+    <Reference Include="DigitalRune.Animation.Content.Pipeline">
+      <HintPath>..\..\..\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Animation.Content.Pipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="DigitalRune.Game">
+      <HintPath>..\..\..\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="DigitalRune.Game.Input">
+      <HintPath>..\..\..\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Game.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="DigitalRune.Game.UI">
+      <HintPath>..\..\..\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Game.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DigitalRune.Game.UI.Content.Pipeline">
+      <HintPath>..\..\..\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Game.UI.Content.Pipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="DigitalRune.Geometry">
+      <HintPath>..\..\..\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Geometry.dll</HintPath>
+    </Reference>
+    <Reference Include="DigitalRune.Geometry.Content.Pipeline">
+      <HintPath>..\..\..\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Geometry.Content.Pipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="DigitalRune.Graphics">
+      <HintPath>..\..\..\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="DigitalRune.Graphics.Content.Pipeline">
+      <HintPath>..\..\..\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Graphics.Content.Pipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="DigitalRune.Mathematics">
+      <HintPath>..\..\..\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="DigitalRune.Mathematics.Content.Pipeline">
+      <HintPath>..\..\..\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Mathematics.Content.Pipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="DigitalRune.Particles">
+      <HintPath>..\..\..\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Particles.dll</HintPath>
+    </Reference>
+    <Reference Include="DigitalRune.Physics">
+      <HintPath>..\..\..\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Physics.dll</HintPath>
+    </Reference>
+    <Reference Include="DigitalRune.Physics.Specialized">
+      <HintPath>..\..\..\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Physics.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="DigitalRune.ServiceLocation">
+      <HintPath>..\..\..\DigitalRune-Engine\References\XNA\Windows\DigitalRune.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Kinect, Version=1.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\..\..\DigitalRune-Engine\References\XNA\Windows\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.FBXImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.TextureImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.XImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.AudioImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SpriteFont1.spritefont">
+      <Name>SpriteFont1</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AppContentPipelineExtension\AppContentPipelineExtension.csproj">
+      <Project>{1f22e778-5dbc-49b0-8fe1-b970161e8816}</Project>
+      <Name>AppContentPipelineExtension</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sandbox\Sandbox.fbx">
+      <Name>Sandbox</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sandbox\Sandbox.png">
+      <Name>Sandboxx</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SixthModel\ModelDiffuseMap.tga">
+      <Name>ModelDiffuseMap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="SixthModel\ModelNormalsMap.tga">
+      <Name>ModelNormalsMap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="SixthModel\ModelSpecularMap.tga">
+      <Name>ModelSpecularMap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SixthModel\SecondModel.FBX">
+      <Name>SecondModel</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UI Theme\Aero\Console.spritefont">
+      <Name>Console</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="UI Theme\Aero\Default.spritefont">
+      <Name>Default</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UI Theme\Aero\Theme.xml">
+      <Name>Theme</Name>
+      <Importer>ThemeImporter</Importer>
+      <Processor>ThemeProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="UI Theme\Aero\UITexture.png">
+      <Name>UITexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UI Theme\BlendBlue\Console.spritefont">
+      <Name>Console</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="UI Theme\BlendBlue\Default.spritefont">
+      <Name>Default</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UI Theme\BlendBlue\DejaVuSans.bmp">
+      <Name>DejaVuSanss</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="UI Theme\BlendBlue\Theme.xml">
+      <Name>Theme</Name>
+      <Importer>ThemeImporter</Importer>
+      <Processor>ThemeProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="UI Theme\BlendBlue\UITexture.png">
+      <Name>UITexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
+  <!--  To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

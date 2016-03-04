@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline" xmlns:Framework="Microsoft.Xna.Framework" xmlns:Processors="Microsoft.Xna.Framework.Content.Pipeline.Processors">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>SpriteFont1.spritefont</Source>
+      <Name>SpriteFont1</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
+      <Time>2015-11-12T21:31:00.4642801+02:00</Time>
+    </Item>
+    <Item>
+      <Source>UI Theme\Aero\Console.spritefont</Source>
+      <Name>UI Theme\Aero\Console</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Console.xnb</Output>
+      <Time>2015-12-04T09:43:18.4629996+02:00</Time>
+    </Item>
+    <Item>
+      <Source>UI Theme\Aero\Default.spritefont</Source>
+      <Name>UI Theme\Aero\Default</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Default.xnb</Output>
+      <Time>2015-12-04T09:43:18.4786276+02:00</Time>
+    </Item>
+    <Item>
+      <Source>UI Theme\BlendBlue\Console.spritefont</Source>
+      <Name>UI Theme\BlendBlue\Console</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Console.xnb</Output>
+      <Time>2015-12-04T17:06:35.8606904+02:00</Time>
+    </Item>
+    <Item>
+      <Source>UI Theme\BlendBlue\Default.spritefont</Source>
+      <Name>UI Theme\BlendBlue\Default</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Default.xnb</Output>
+      <Time>2015-12-04T17:06:35.8763171+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sandbox\Sandbox.fbx</Source>
+      <Name>Sandbox\Sandbox</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\Sandbox\Sandbox.xnb</Output>
+      <Time>2015-11-13T16:33:59.9320574+02:00</Time>
+      <Dependency>
+        <Key>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\obj\x86\Debug\Sandbox\Sandbox_0.xml</Key>
+        <Value>2016-03-04T15:19:58.7976197+02:00</Value>
+      </Dependency>
+      <Request>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\Sandbox\Sandbox_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>SixthModel\SecondModel.FBX</Source>
+      <Name>SixthModel\SecondModel</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\SixthModel\SecondModel.xnb</Output>
+      <Time>2015-11-22T23:21:18.1082923+02:00</Time>
+      <Dependency>
+        <Key>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\obj\x86\Debug\SixthModel\SecondModel_0.xml</Key>
+        <Value>2016-03-04T15:20:00.0570218+02:00</Value>
+      </Dependency>
+      <Request>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\ModelDiffuseMap_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Sandbox\Sandbox.png</Source>
+      <Name>Sandbox\Sandboxx</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\Sandbox\Sandboxx.xnb</Output>
+      <Time>2015-11-13T16:45:04.6045598+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SixthModel\ModelDiffuseMap.tga</Source>
+      <Name>SixthModel\ModelDiffuseMap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\SixthModel\ModelDiffuseMap.xnb</Output>
+      <Time>2015-11-22T10:32:21.2973374+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SixthModel\ModelNormalsMap.tga</Source>
+      <Name>SixthModel\ModelNormalsMap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\SixthModel\ModelNormalsMap.xnb</Output>
+      <Time>2015-11-22T10:32:21.300339+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SixthModel\ModelSpecularMap.tga</Source>
+      <Name>SixthModel\ModelSpecularMap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\SixthModel\ModelSpecularMap.xnb</Output>
+      <Time>2015-11-22T10:32:21.3023399+02:00</Time>
+    </Item>
+    <Item>
+      <Source>UI Theme\Aero\UITexture.png</Source>
+      <Name>UI Theme\Aero\UITexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\UITexture.xnb</Output>
+      <Time>2015-12-04T09:43:18.4942496+02:00</Time>
+    </Item>
+    <Item>
+      <Source>UI Theme\BlendBlue\DejaVuSans.bmp</Source>
+      <Name>UI Theme\BlendBlue\DejaVuSanss</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\DejaVuSanss.xnb</Output>
+      <Time>2015-12-04T17:06:35.8919455+02:00</Time>
+    </Item>
+    <Item>
+      <Source>UI Theme\BlendBlue\UITexture.png</Source>
+      <Name>UI Theme\BlendBlue\UITexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\UITexture.xnb</Output>
+      <Time>2015-12-04T17:06:35.938823+02:00</Time>
+    </Item>
+    <Item>
+      <Source>UI Theme\Aero\Theme.xml</Source>
+      <Name>UI Theme\Aero\Theme</Name>
+      <Importer>ThemeImporter</Importer>
+      <Processor>ThemeProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Theme.xnb</Output>
+      <Extra>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Cursors\Arrow.cur</Extra>
+      <Extra>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Cursors\Cross.cur</Extra>
+      <Extra>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Cursors\IBeam.cur</Extra>
+      <Extra>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Cursors\SizeAll.cur</Extra>
+      <Extra>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Cursors\SizeNESW.cur</Extra>
+      <Extra>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Cursors\SizeNS.cur</Extra>
+      <Extra>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Cursors\SizeNWSE.cur</Extra>
+      <Extra>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Cursors\SizeWE.cur</Extra>
+      <Extra>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Cursors\Unavailable.cur</Extra>
+      <Extra>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Cursors\Wait.ani</Extra>
+      <Time>2015-12-04T09:43:18.4786276+02:00</Time>
+      <Dependency>
+        <Key>UI Theme\Aero\Cursors\Arrow.cur</Key>
+        <Value>2015-09-27T19:37:50.3690026+03:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>UI Theme\Aero\Cursors\Cross.cur</Key>
+        <Value>2015-09-27T19:37:50.3690026+03:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>UI Theme\Aero\Cursors\IBeam.cur</Key>
+        <Value>2015-09-27T19:37:50.3533806+03:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>UI Theme\Aero\Cursors\SizeAll.cur</Key>
+        <Value>2015-09-27T19:37:50.3533806+03:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>UI Theme\Aero\Cursors\SizeNESW.cur</Key>
+        <Value>2015-09-27T19:37:50.3690026+03:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>UI Theme\Aero\Cursors\SizeNS.cur</Key>
+        <Value>2015-09-27T19:37:50.3690026+03:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>UI Theme\Aero\Cursors\SizeNWSE.cur</Key>
+        <Value>2015-09-27T19:37:50.3690026+03:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>UI Theme\Aero\Cursors\SizeWE.cur</Key>
+        <Value>2015-09-27T19:37:50.3533806+03:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>UI Theme\Aero\Cursors\Unavailable.cur</Key>
+        <Value>2015-09-27T19:37:50.3533806+03:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>UI Theme\Aero\Cursors\Wait.ani</Key>
+        <Value>2015-09-27T19:37:50.3533806+03:00</Value>
+      </Dependency>
+      <Request>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Default.xnb</Request>
+      <Request>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Console.xnb</Request>
+      <Request>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\UITexture.xnb</Request>
+    </Item>
+    <Item>
+      <Source>UI Theme\BlendBlue\Theme.xml</Source>
+      <Name>UI Theme\BlendBlue\Theme</Name>
+      <Importer>ThemeImporter</Importer>
+      <Processor>ThemeProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Theme.xnb</Output>
+      <Extra>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Cursors\Arrow.cur</Extra>
+      <Extra>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Cursors\Cross.cur</Extra>
+      <Extra>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Cursors\IBeam.cur</Extra>
+      <Extra>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Cursors\SizeAll.cur</Extra>
+      <Extra>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Cursors\SizeNESW.cur</Extra>
+      <Extra>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Cursors\SizeNS.cur</Extra>
+      <Extra>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Cursors\SizeNWSE.cur</Extra>
+      <Extra>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Cursors\SizeWE.cur</Extra>
+      <Extra>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Cursors\Unavailable.cur</Extra>
+      <Extra>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Cursors\Wait.ani</Extra>
+      <Time>2015-12-04T17:06:35.9075718+02:00</Time>
+      <Dependency>
+        <Key>UI Theme\BlendBlue\Cursors\Arrow.cur</Key>
+        <Value>2015-09-27T19:37:50.509628+03:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>UI Theme\BlendBlue\Cursors\Cross.cur</Key>
+        <Value>2015-09-27T19:37:50.509628+03:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>UI Theme\BlendBlue\Cursors\IBeam.cur</Key>
+        <Value>2015-09-27T19:37:50.509628+03:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>UI Theme\BlendBlue\Cursors\SizeAll.cur</Key>
+        <Value>2015-09-27T19:37:50.509628+03:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>UI Theme\BlendBlue\Cursors\SizeNESW.cur</Key>
+        <Value>2015-09-27T19:37:50.509628+03:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>UI Theme\BlendBlue\Cursors\SizeNS.cur</Key>
+        <Value>2015-09-27T19:37:50.509628+03:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>UI Theme\BlendBlue\Cursors\SizeNWSE.cur</Key>
+        <Value>2015-09-27T19:37:50.509628+03:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>UI Theme\BlendBlue\Cursors\SizeWE.cur</Key>
+        <Value>2015-09-27T19:37:50.509628+03:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>UI Theme\BlendBlue\Cursors\Unavailable.cur</Key>
+        <Value>2015-09-27T19:37:50.509628+03:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>UI Theme\BlendBlue\Cursors\Wait.ani</Key>
+        <Value>2015-09-27T19:37:50.509628+03:00</Value>
+      </Dependency>
+      <Request>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Default.xnb</Request>
+      <Request>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Console.xnb</Request>
+      <Request>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\DejaVuSans.xnb</Request>
+      <Request>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\UITexture.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Sandbox\Sandbox.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\obj\x86\Debug\Sandbox\Sandbox_0.xml</Output>
+      <Time>2015-11-13T16:33:59.9320574+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sandbox\Sandbox.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\Sandbox\Sandbox_0.xnb</Output>
+      <Time>2015-11-13T16:45:04.6045598+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SixthModel\SecondModel.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\obj\x86\Debug\SixthModel\SecondModel_0.xml</Output>
+      <Time>2015-11-22T23:21:18.1082923+02:00</Time>
+    </Item>
+    <Item>
+      <Source>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\obj\x86\Debug\FBX\943D24BD\SecondModel.fbm\ModelDiffuseMap.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\ModelDiffuseMap_0.xnb</Output>
+      <Time>2016-03-04T15:19:59.6013693+02:00</Time>
+    </Item>
+    <Item>
+      <Source>UI Theme\BlendBlue\DejaVuSans.bmp</Source>
+      <Name>UI Theme\BlendBlue\DejaVuSans</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>FontTextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\DejaVuSans.xnb</Output>
+      <Time>2015-12-04T17:06:35.8919455+02:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{69070AD6-5285-4E38-BDE6-7051290B1861}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGameContent\</RootDirectory>
+      <LoggerRootDirectory>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T17:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T17:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T17:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T17:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T17:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T17:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>D:\College\anul 4\Licenta\DigitalRune-Engine\References\XNA\Windows\Microsoft.Practices.ServiceLocation.dll</Key>
+        <Value>2015-09-27T19:39:06.7948055+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Kinect\v4.0_1.8.0.0__31bf3856ad364e35\Microsoft.Kinect.dll</Key>
+        <Value>2015-12-04T23:36:20.0571487+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>D:\College\anul 4\Licenta\DigitalRune-Engine\References\XNA\Windows\DigitalRune.ServiceLocation.dll</Key>
+        <Value>2015-09-27T20:25:35.986+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>D:\College\anul 4\Licenta\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Physics.Specialized.dll</Key>
+        <Value>2015-09-27T20:25:35.93+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>D:\College\anul 4\Licenta\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Physics.dll</Key>
+        <Value>2015-09-27T20:25:35.81+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>D:\College\anul 4\Licenta\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Particles.dll</Key>
+        <Value>2015-09-27T20:25:35.662+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>D:\College\anul 4\Licenta\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Mathematics.dll</Key>
+        <Value>2015-09-27T20:25:35.478+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>D:\College\anul 4\Licenta\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Mathematics.Content.Pipeline.dll</Key>
+        <Value>2015-09-27T20:25:35.535+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>D:\College\anul 4\Licenta\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Graphics.dll</Key>
+        <Value>2015-09-27T20:25:35.162+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\WindowsFormsIntegration\v4.0_4.0.0.0__31bf3856ad364e35\WindowsFormsIntegration.dll</Key>
+        <Value>2015-10-30T09:19:34.237028+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\UIAutomationProvider\v4.0_4.0.0.0__31bf3856ad364e35\UIAutomationProvider.dll</Key>
+        <Value>2015-10-30T09:19:34.2839023+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\UIAutomationTypes\v4.0_4.0.0.0__31bf3856ad364e35\UIAutomationTypes.dll</Key>
+        <Value>2015-10-30T09:19:38.1120158+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\PresentationCore\v4.0_4.0.0.0__31bf3856ad364e35\PresentationCore.dll</Key>
+        <Value>2015-12-07T03:53:23.369794+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\WindowsBase\v4.0_4.0.0.0__31bf3856ad364e35\WindowsBase.dll</Key>
+        <Value>2015-12-07T03:53:23.5729376+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Accessibility\v4.0_4.0.0.0__b03f5f7f11d50a3a\Accessibility.dll</Key>
+        <Value>2015-10-30T09:19:31.5495364+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\PresentationFramework\v4.0_4.0.0.0__31bf3856ad364e35\PresentationFramework.dll</Key>
+        <Value>2015-12-07T03:53:23.479178+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\PresentationUI\v4.0_4.0.0.0__31bf3856ad364e35\PresentationUI.dll</Key>
+        <Value>2015-10-30T09:19:34.0182785+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\ReachFramework\v4.0_4.0.0.0__31bf3856ad364e35\ReachFramework.dll</Key>
+        <Value>2015-12-07T03:53:23.5573108+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>D:\College\anul 4\Licenta\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Graphics.Content.Pipeline.dll</Key>
+        <Value>2015-09-27T20:25:35.292+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>D:\College\anul 4\Licenta\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Geometry.dll</Key>
+        <Value>2015-09-27T20:25:34.77+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>D:\College\anul 4\Licenta\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Geometry.Content.Pipeline.dll</Key>
+        <Value>2015-09-27T20:25:34.835+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.CSharp\v4.0_4.0.0.0__b03f5f7f11d50a3a\Microsoft.CSharp.dll</Key>
+        <Value>2015-10-30T09:19:34.0182785+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>D:\College\anul 4\Licenta\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Game.UI.dll</Key>
+        <Value>2015-09-27T20:25:34.476+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>D:\College\anul 4\Licenta\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Game.UI.Content.Pipeline.dll</Key>
+        <Value>2015-09-27T20:25:34.529+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>D:\College\anul 4\Licenta\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Game.Input.dll</Key>
+        <Value>2015-09-27T20:25:34.323+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>D:\College\anul 4\Licenta\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Game.dll</Key>
+        <Value>2015-09-27T20:25:34.206+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>D:\College\anul 4\Licenta\DigitalRune-Engine\References\XNA\Windows\DigitalRune.dll</Key>
+        <Value>2015-09-27T20:25:33.901+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>D:\College\anul 4\Licenta\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Animation.dll</Key>
+        <Value>2015-09-27T20:25:34.089+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>D:\College\anul 4\Licenta\DigitalRune-Engine\References\XNA\Windows\DigitalRune.Animation.Content.Pipeline.dll</Key>
+        <Value>2015-09-27T20:25:34.142+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>D:\College\anul 4\Licenta\KinectGame\AppContentPipelineExtension\bin\x86\Debug\AppContentPipelineExtension.dll</Key>
+        <Value>2016-03-04T15:19:47.6392495+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2015-12-04T23:38:37.5519914+02:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

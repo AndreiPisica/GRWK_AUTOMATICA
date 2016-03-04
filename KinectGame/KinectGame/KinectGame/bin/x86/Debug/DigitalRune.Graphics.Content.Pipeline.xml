@@ -1,0 +1,1285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>DigitalRune.Graphics.Content.Pipeline</name>
+  </assembly>
+  <members>
+    <member name="T:DigitalRune.Graphics.Content.ResizeFilter">
+      <summary>
+            Defines a filter for image resizing.
+            </summary>
+    </member>
+    <member name="F:DigitalRune.Graphics.Content.ResizeFilter.Box">
+      <summary>Box filter.</summary>
+    </member>
+    <member name="F:DigitalRune.Graphics.Content.ResizeFilter.Triangle">
+      <summary>Triangle (bilinear/tent) filter.</summary>
+    </member>
+    <member name="F:DigitalRune.Graphics.Content.ResizeFilter.Cubic">
+      <summary>Cubic filter.</summary>
+    </member>
+    <member name="F:DigitalRune.Graphics.Content.ResizeFilter.Quadric">
+      <summary>Quadric (bell) filter.</summary>
+    </member>
+    <member name="F:DigitalRune.Graphics.Content.ResizeFilter.BSpline">
+      <summary>Cubic b-spline filter.</summary>
+    </member>
+    <member name="F:DigitalRune.Graphics.Content.ResizeFilter.Mitchell">
+      <summary>Mitchell &amp; Netravali's two-param cubic filter. (Source: "Reconstruction Filters in Computer Graphics", SIGGRAPH 88)</summary>
+    </member>
+    <member name="F:DigitalRune.Graphics.Content.ResizeFilter.Lanczos">
+      <summary>Lanczos3 filter.</summary>
+    </member>
+    <member name="F:DigitalRune.Graphics.Content.ResizeFilter.Sinc">
+      <summary>Sinc filter.</summary>
+    </member>
+    <member name="F:DigitalRune.Graphics.Content.ResizeFilter.Kaiser">
+      <summary>Kaiser filter.</summary>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.TextureAddressMode">
+      <summary>
+            Defines the texture address mode.
+            </summary>
+    </member>
+    <member name="F:DigitalRune.Graphics.Content.TextureAddressMode.Clamp">
+      <summary>Texture coordinates are clamped to [0.0, 1.0].</summary>
+    </member>
+    <member name="F:DigitalRune.Graphics.Content.TextureAddressMode.Repeat">
+      <summary>Texture coordinates repeat beyond [0.0, 1.0]</summary>
+    </member>
+    <member name="F:DigitalRune.Graphics.Content.TextureAddressMode.Mirror">
+      <summary>Similar to <see cref="F:DigitalRune.Graphics.Content.TextureAddressMode.Repeat" />, except that the texture is flipped with each repetition.</summary>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DeferredNodeContent">
+      <summary>
+            Represents a placeholder for a <see cref="T:Microsoft.Xna.Framework.Content.Pipeline.Graphics.NodeContent" /> which hasn't been imported yet.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DeferredNodeContent.Import(Microsoft.Xna.Framework.Content.Pipeline.ContentProcessorContext)">
+      <summary>
+            Imports the asset.
+            </summary>
+      <param name="context">Contains any required custom process parameters.</param>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DREffectBindingContent">
+      <summary>
+            Stores the processed data for an <strong>EffectBinding</strong> asset.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DREffectBindingContent.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DREffectBindingContent</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DREffectBindingContent.EffectType">
+      <summary>
+            Gets or sets the type of the effect.
+            </summary>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DREffectBindingWriter">
+      <summary>
+            Writes an <see cref="T:DigitalRune.Graphics.Content.Pipeline.DREffectBindingContent" /> to a binary format that can be read by the 
+            <strong>EffectBindingReader</strong> to load an <strong>EffectBinding</strong>.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DREffectBindingWriter.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DREffectBindingWriter</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DREffectBindingWriter.GetRuntimeReader(Microsoft.Xna.Framework.Content.Pipeline.TargetPlatform)">
+      <summary>
+            Gets the assembly qualified name of the runtime loader for this type.
+            </summary>
+      <param name="targetPlatform">Name of the platform.</param>
+      <returns>Name of the runtime loader.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DREffectBindingWriter.GetRuntimeType(Microsoft.Xna.Framework.Content.Pipeline.TargetPlatform)">
+      <summary>
+            Gets the assembly qualified name of the runtime target type.
+            </summary>
+      <param name="targetPlatform">The target platform.</param>
+      <returns>The qualified name.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DREffectBindingWriter.Write(Microsoft.Xna.Framework.Content.Pipeline.Serialization.Compiler.ContentWriter,DigitalRune.Graphics.Content.Pipeline.DREffectBindingContent)">
+      <summary>
+            Compiles a strongly typed object into binary format.
+            </summary>
+      <param name="output">The content writer serializing the value.</param>
+      <param name="value">The value to write.</param>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DREffectType">
+      <summary>
+            Specifies the effect type.
+            </summary>
+    </member>
+    <member name="F:DigitalRune.Graphics.Content.Pipeline.DREffectType.AlphaTestEffect">
+      <summary>
+            The predefined effect that supports alpha testing.
+            </summary>
+    </member>
+    <member name="F:DigitalRune.Graphics.Content.Pipeline.DREffectType.BasicEffect">
+      <summary>
+            The predefined basic rendering effect.
+            </summary>
+    </member>
+    <member name="F:DigitalRune.Graphics.Content.Pipeline.DREffectType.DualTextureEffect">
+      <summary>
+            The predefined effect that supports two-layer multitexturing.
+            </summary>
+    </member>
+    <member name="F:DigitalRune.Graphics.Content.Pipeline.DREffectType.EnvironmentMapEffect">
+      <summary>
+            The predefined effect that supports environment mapping.
+            </summary>
+    </member>
+    <member name="F:DigitalRune.Graphics.Content.Pipeline.DREffectType.SkinnedEffect">
+      <summary>
+            The predefined effect for rendering skinned models.
+            </summary>
+    </member>
+    <member name="F:DigitalRune.Graphics.Content.Pipeline.DREffectType.CustomEffect">
+      <summary>
+            A custom effect.
+            </summary>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DRLodGroupNodeContent">
+      <summary>
+            Stores processing data for a <strong>LodGroupNode</strong>.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRLodGroupNodeContent.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:DigitalRune.Graphics.Content.Pipeline.DRLodGroupNodeContent" /> class.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRLodGroupNodeContent.Levels">
+      <summary>
+            Gets or sets the levels of detail (LODs).
+            </summary>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DRLodGroupNodeWriter">
+      <summary>
+            Writes a <see cref="T:DigitalRune.Graphics.Content.Pipeline.DRLodGroupNodeContent" /> to binary format that can be read by the 
+            <strong>LodGroupNodeReader</strong> to load a <strong>LodGroupNode</strong>.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRLodGroupNodeWriter.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DRLodGroupNodeWriter</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRLodGroupNodeWriter.GetRuntimeReader(Microsoft.Xna.Framework.Content.Pipeline.TargetPlatform)">
+      <summary>
+            Gets the assembly qualified name of the runtime loader for this type.
+            </summary>
+      <param name="targetPlatform">Name of the platform.</param>
+      <returns>Name of the runtime loader.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRLodGroupNodeWriter.GetRuntimeType(Microsoft.Xna.Framework.Content.Pipeline.TargetPlatform)">
+      <summary>
+            Gets the assembly qualified name of the runtime target type.
+            </summary>
+      <param name="targetPlatform">The target platform.</param>
+      <returns>The qualified name.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRLodGroupNodeWriter.Write(Microsoft.Xna.Framework.Content.Pipeline.Serialization.Compiler.ContentWriter,DigitalRune.Graphics.Content.Pipeline.DRLodGroupNodeContent)">
+      <summary>
+            Compiles a strongly typed object into binary format.
+            </summary>
+      <param name="output">The content writer serializing the value.</param>
+      <param name="value">The value to write.</param>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DRMaterialContent">
+      <summary>
+            Stores the processed data for a <strong>Material</strong> asset.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMaterialContent.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DRMaterialContent</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMaterialContent.Definition">
+      <summary>
+            Gets or sets the imported material definition (XML file).
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMaterialContent.Passes">
+      <summary>
+            Gets or sets the effect bindings per render pass.
+            </summary>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DRMaterialImporter">
+      <summary>
+            Imports a material definition (.drmat file).
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMaterialImporter.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DRMaterialImporter</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMaterialImporter.Import(System.String,Microsoft.Xna.Framework.Content.Pipeline.ContentImporterContext)">
+      <summary>
+            Called by the framework when importing a game asset. This is the method called by XNA when
+            an asset is to be imported into an object that can be recognized by the Content Pipeline.
+            </summary>
+      <param name="filename">Name of a game asset file.</param>
+      <param name="context">
+            Contains information for importing a game asset, such as a logger interface.
+            </param>
+      <returns>Resulting game asset.</returns>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DRMaterialProcessor">
+      <summary>
+            Builds a material, which can be used for rendering a model.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMaterialProcessor.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DRMaterialProcessor</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMaterialProcessor.ColorKeyColor">
+      <summary>
+            Gets or sets the color used when color keying for a texture is enabled. When color keying, 
+            all pixels of a specified color are replaced with transparent black.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMaterialProcessor.ColorKeyEnabled">
+      <summary>
+            Gets or sets a value indicating whether color keying of a model is enabled.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMaterialProcessor.DefaultEffectFile">
+      <summary>
+            Gets or sets the path of the default DirectX effect file.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMaterialProcessor.DefaultEffectType">
+      <summary>
+            Gets or sets the type of the default effect.
+            </summary>
+    </member>
+    <member name="F:DigitalRune.Graphics.Content.Pipeline.DRMaterialProcessor.DefaultPass">
+      <summary>
+            The name of the default render pass.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMaterialProcessor.GenerateMipmaps">
+      <summary>
+            Gets or sets a value indicating whether a full chain of mipmaps is generated from the source 
+            material. Existing mipmaps of the material are not replaced.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMaterialProcessor.InputTextureGamma">
+      <summary>
+            Gets or sets the gamma of the input textures.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMaterialProcessor.OnBuildEffect(Microsoft.Xna.Framework.Content.Pipeline.ExternalReference{Microsoft.Xna.Framework.Content.Pipeline.Graphics.EffectContent},Microsoft.Xna.Framework.Content.Pipeline.ContentProcessorContext)">
+      <summary>
+            Builds effect content.
+            </summary>
+      <param name="effect">An external reference to the effect content.</param>
+      <param name="context">Context for the specified processor.</param>
+      <returns>A platform-specific compiled binary effect.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMaterialProcessor.OnBuildTexture(System.String,Microsoft.Xna.Framework.Content.Pipeline.ExternalReference{Microsoft.Xna.Framework.Content.Pipeline.Graphics.TextureContent},Microsoft.Xna.Framework.Content.Pipeline.ContentProcessorContext)">
+      <summary>
+            Builds texture content.
+            </summary>
+      <param name="textureName">
+            The name of the texture. This should correspond to the key used to store the texture in
+            <see cref="P:Microsoft.Xna.Framework.Content.Pipeline.Graphics.MaterialContent.Textures" />.
+            </param>
+      <param name="texture">
+            The asset to build. This should be a member of <see cref="P:Microsoft.Xna.Framework.Content.Pipeline.Graphics.MaterialContent.Textures" />. The
+            opaque data dictionary stored in <paramref name="texture" /> may contain parameters for the 
+            <see cref="T:DigitalRune.Graphics.Content.Pipeline.DRTextureProcessor" />.
+            </param>
+      <param name="context">Context for the specified processor.</param>
+      <returns>The reference to the built texture.</returns>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMaterialProcessor.OutputTextureGamma">
+      <summary>
+            Gets or sets the gamma of the output textures.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMaterialProcessor.PremultiplyTextureAlpha">
+      <summary>
+            Gets or sets a value indicating whether alpha premultiply of textures is enabled.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMaterialProcessor.Process(Microsoft.Xna.Framework.Content.Pipeline.Graphics.MaterialContent,Microsoft.Xna.Framework.Content.Pipeline.ContentProcessorContext)">
+      <summary>
+            Processes the specified input data and returns the result.
+            </summary>
+      <param name="input">Existing content object being processed.</param>
+      <param name="context">Contains any required custom process parameters.</param>
+      <returns>A typed object representing the processed input.</returns>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="input" /> or <paramref name="context" /> is <see langword="null" />.
+            </exception>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMaterialProcessor.ReferenceAlpha">
+      <summary>
+            Gets or sets the reference alpha value, which is used in the alpha test.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMaterialProcessor.ResizeTexturesToPowerOfTwo">
+      <summary>
+            Gets or sets a value indicating whether resizing of textures are enabled.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMaterialProcessor.ScaleTextureAlphaToCoverage">
+      <summary>
+            Gets or sets a value indicating whether the alpha of the textures should be scaled to 
+            achieve the same alpha test coverage as in the source images.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMaterialProcessor.TextureFormat">
+      <summary>
+            Gets or sets the texture format of output materials.
+            </summary>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DRMaterialWriter">
+      <summary>
+            Writes a <see cref="T:DigitalRune.Graphics.Content.Pipeline.DRMaterialContent" /> to binary format that can be read by the 
+            <strong>MaterialReader</strong> to load a <strong>Material</strong>.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMaterialWriter.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DRMaterialWriter</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMaterialWriter.GetRuntimeReader(Microsoft.Xna.Framework.Content.Pipeline.TargetPlatform)">
+      <summary>
+            Gets the assembly qualified name of the runtime loader for this type.
+            </summary>
+      <param name="targetPlatform">Name of the platform.</param>
+      <returns>Name of the runtime loader.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMaterialWriter.GetRuntimeType(Microsoft.Xna.Framework.Content.Pipeline.TargetPlatform)">
+      <summary>
+            Gets the assembly qualified name of the runtime target type.
+            </summary>
+      <param name="targetPlatform">The target platform.</param>
+      <returns>The qualified name.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMaterialWriter.Write(Microsoft.Xna.Framework.Content.Pipeline.Serialization.Compiler.ContentWriter,DigitalRune.Graphics.Content.Pipeline.DRMaterialContent)">
+      <summary>
+            Compiles a strongly typed object into binary format.
+            </summary>
+      <param name="output">The content writer serializing the value.</param>
+      <param name="value">The value to write.</param>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DRMeshContent">
+      <summary>
+            Stores the processed data for a <strong>Mesh</strong> asset.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMeshContent.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DRMeshContent</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMeshContent.Animations">
+      <summary>
+            Gets or sets the animations.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMeshContent.BoundingShape">
+      <summary>
+            Gets or sets the bounding shape for this mesh.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMeshContent.Name">
+      <summary>
+            Gets or sets the mesh name.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMeshContent.Occluder">
+      <summary>
+            Gets or sets the occluder.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMeshContent.Skeleton">
+      <summary>
+            Gets or sets the skeleton.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMeshContent.Submeshes">
+      <summary>
+            Gets or sets the submeshes associated with this mesh.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMeshContent.UserData">
+      <summary>
+            Gets or sets a user-defined object.
+            </summary>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DRMeshNodeContent">
+      <summary>
+            Stores processing data for a <strong>MeshNode</strong>.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMeshNodeContent.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DRMeshNodeContent</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMeshNodeContent.InputMesh">
+      <summary>
+            Gets or sets the imported <see cref="T:Microsoft.Xna.Framework.Content.Pipeline.Graphics.MeshContent" />.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMeshNodeContent.InputMorphTargets">
+      <summary>
+            Gets or sets the morph targets associated with the <see cref="P:DigitalRune.Graphics.Content.Pipeline.DRMeshNodeContent.InputMesh" />.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMeshNodeContent.Mesh">
+      <summary>
+            Gets or sets the mesh.
+            </summary>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DRMeshNodeWriter">
+      <summary>
+            Writes a <see cref="T:DigitalRune.Graphics.Content.Pipeline.DRMeshNodeContent" /> to binary format that can be read by the 
+            <strong>MeshNodeReader</strong> to load a <strong>MeshNode</strong>.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMeshNodeWriter.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DRMeshNodeWriter</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMeshNodeWriter.GetRuntimeReader(Microsoft.Xna.Framework.Content.Pipeline.TargetPlatform)">
+      <summary>
+            Gets the assembly qualified name of the runtime loader for this type.
+            </summary>
+      <param name="targetPlatform">Name of the platform.</param>
+      <returns>Name of the runtime loader.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMeshNodeWriter.GetRuntimeType(Microsoft.Xna.Framework.Content.Pipeline.TargetPlatform)">
+      <summary>
+            Gets the assembly qualified name of the runtime target type.
+            </summary>
+      <param name="targetPlatform">The target platform.</param>
+      <returns>The qualified name.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMeshNodeWriter.Write(Microsoft.Xna.Framework.Content.Pipeline.Serialization.Compiler.ContentWriter,DigitalRune.Graphics.Content.Pipeline.DRMeshNodeContent)">
+      <summary>
+            Compiles a strongly typed object into binary format.
+            </summary>
+      <param name="output">The content writer serializing the value.</param>
+      <param name="value">The value to write.</param>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DRMeshWriter">
+      <summary>
+            Writes a <see cref="T:DigitalRune.Graphics.Content.Pipeline.DRMeshContent" /> to binary format that can be read by the
+            <strong>MeshReader</strong> to load a <strong>Mesh</strong></summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMeshWriter.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DRMeshWriter</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMeshWriter.GetRuntimeReader(Microsoft.Xna.Framework.Content.Pipeline.TargetPlatform)">
+      <summary>
+            Gets the assembly qualified name of the runtime loader for this type.
+            </summary>
+      <param name="targetPlatform">Name of the platform.</param>
+      <returns>Name of the runtime loader.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMeshWriter.GetRuntimeType(Microsoft.Xna.Framework.Content.Pipeline.TargetPlatform)">
+      <summary>
+            Gets the assembly qualified name of the runtime target type.
+            </summary>
+      <param name="targetPlatform">The target platform.</param>
+      <returns>The qualified name.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMeshWriter.Write(Microsoft.Xna.Framework.Content.Pipeline.Serialization.Compiler.ContentWriter,DigitalRune.Graphics.Content.Pipeline.DRMeshContent)">
+      <summary>
+            Compiles a strongly typed object into binary format.
+            </summary>
+      <param name="output">The content writer serializing the value.</param>
+      <param name="value">The value to write.</param>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DRModelImporter">
+      <summary>
+            Imports a model based on the model description (.drmdl file).
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRModelImporter.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DRModelImporter</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRModelImporter.Import(System.String,Microsoft.Xna.Framework.Content.Pipeline.ContentImporterContext)">
+      <summary>
+            Called by the framework when importing a game asset. This is the method called by XNA when
+            an asset is to be imported into an object that can be recognized by the Content Pipeline.
+            </summary>
+      <param name="filename">Name of a game asset file.</param>
+      <param name="context">
+            Contains information for importing a game asset, such as a logger interface.
+            </param>
+      <returns>Resulting game asset.</returns>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DRModelNodeContent">
+      <summary>
+            Stores the processed data for a <strong>ModelNode</strong> asset.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRModelNodeContent.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DRModelNodeContent</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DRModelNodeWriter">
+      <summary>
+            Writes a <see cref="T:DigitalRune.Graphics.Content.Pipeline.DRModelNodeContent" /> to binary format that can be read by the
+            <strong>ModelNodeReader</strong> to load a <strong>ModelNode</strong>.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRModelNodeWriter.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DRModelNodeWriter</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRModelNodeWriter.GetRuntimeReader(Microsoft.Xna.Framework.Content.Pipeline.TargetPlatform)">
+      <summary>
+            Gets the assembly qualified name of the runtime loader for this type.
+            </summary>
+      <param name="targetPlatform">Name of the platform.</param>
+      <returns>Name of the runtime loader.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRModelNodeWriter.GetRuntimeType(Microsoft.Xna.Framework.Content.Pipeline.TargetPlatform)">
+      <summary>
+            Gets the assembly qualified name of the runtime target type.
+            </summary>
+      <param name="targetPlatform">The target platform.</param>
+      <returns>The qualified name.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRModelNodeWriter.Write(Microsoft.Xna.Framework.Content.Pipeline.Serialization.Compiler.ContentWriter,DigitalRune.Graphics.Content.Pipeline.DRModelNodeContent)">
+      <summary>
+            Compiles a strongly typed object into binary format.
+            </summary>
+      <param name="output">The content writer serializing the value.</param>
+      <param name="value">The value to write.</param>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DRModelProcessor">
+      <summary>
+            Processes a game asset mesh to a model content that is optimal for runtime.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRModelProcessor.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DRModelProcessor</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRModelProcessor.CreateMissingMaterialDefinition">
+      <summary>
+            Gets or sets the value of the <strong>Create Missing Material Definition</strong> 
+            processor parameter.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRModelProcessor.CreateMissingModelDescription">
+      <summary>
+            Gets or sets the value of the <strong>Create Missing Model Description</strong> 
+            processor parameter.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRModelProcessor.OnBuildMaterial(Microsoft.Xna.Framework.Content.Pipeline.ExternalReference{DigitalRune.Graphics.Content.Pipeline.DRMaterialContent},Microsoft.Xna.Framework.Content.Pipeline.ContentProcessorContext)">
+      <summary>
+            Called by the framework when a material asset needs to be built.
+            </summary>
+      <param name="material">The material asset.</param>
+      <param name="context">The context of this processor.</param>
+      <returns>A reference to the processed material.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRModelProcessor.OnConvertMaterial(Microsoft.Xna.Framework.Content.Pipeline.Graphics.MaterialContent,Microsoft.Xna.Framework.Content.Pipeline.ContentProcessorContext)">
+      <summary>
+            Called by the framework when the <see cref="T:Microsoft.Xna.Framework.Content.Pipeline.Graphics.MaterialContent" /> property of a 
+            <see cref="T:Microsoft.Xna.Framework.Content.Pipeline.Graphics.GeometryContent" /> object is encountered in the input node collection.
+            </summary>
+      <param name="material">The input material content.</param>
+      <param name="context">The context of this processor.</param>
+      <returns>The converted material content.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRModelProcessor.Process(Microsoft.Xna.Framework.Content.Pipeline.Graphics.NodeContent,Microsoft.Xna.Framework.Content.Pipeline.ContentProcessorContext)">
+      <summary>
+            Converts mesh content to model content.
+            </summary>
+      <param name="input">The root node content.</param>
+      <param name="context">Contains any required custom process parameters.</param>
+      <returns>The model content.</returns>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DRMorphTargetContent">
+      <summary>
+            Stores the processed data for a <strong>MorphTarget</strong>.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMorphTargetContent.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DRMorphTargetContent</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMorphTargetContent.Name">
+      <summary>
+            Gets or sets the name of the morph target.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMorphTargetContent.StartVertex">
+      <summary>
+            Gets or sets the index of the first vertex in the vertex buffer that belongs to this morph
+            target (a.k.a base vertex or vertex offset).
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRMorphTargetContent.VertexBuffer">
+      <summary>
+            Gets or sets the vertex buffer associated with this morph target.
+            </summary>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DRMorphTargetWriter">
+      <summary>
+            Writes a <see cref="T:DigitalRune.Graphics.Content.Pipeline.DRMorphTargetContent" /> to binary format that can be read by the
+            <strong>MorphTargetReader</strong> to load a <strong>MorphTarget</strong>.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMorphTargetWriter.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DRMorphTargetWriter</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMorphTargetWriter.GetRuntimeReader(Microsoft.Xna.Framework.Content.Pipeline.TargetPlatform)">
+      <summary>
+            Gets the assembly qualified name of the runtime loader for this type.
+            </summary>
+      <param name="targetPlatform">Name of the platform.</param>
+      <returns>Name of the runtime loader.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMorphTargetWriter.GetRuntimeType(Microsoft.Xna.Framework.Content.Pipeline.TargetPlatform)">
+      <summary>
+            Gets the assembly qualified name of the runtime target type.
+            </summary>
+      <param name="targetPlatform">The target platform.</param>
+      <returns>The qualified name.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRMorphTargetWriter.Write(Microsoft.Xna.Framework.Content.Pipeline.Serialization.Compiler.ContentWriter,DigitalRune.Graphics.Content.Pipeline.DRMorphTargetContent)">
+      <summary>
+            Compiles a strongly typed object into binary format.
+            </summary>
+      <param name="output">The content writer serializing the value.</param>
+      <param name="value">The value to write.</param>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DROccluderContent">
+      <summary>
+            Stores the processed data for an <strong>Occluder</strong> asset.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DROccluderContent.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DROccluderContent</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DROccluderContent.Indices">
+      <summary>
+            Gets or sets the triangle indices.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DROccluderContent.Vertices">
+      <summary>
+            Gets or sets the triangle vertices.
+            </summary>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DROccluderNodeContent">
+      <summary>
+            Stores processing data for an <strong>OccluderNode</strong>.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DROccluderNodeContent.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DROccluderNodeContent</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DROccluderNodeContent.InputMesh">
+      <summary>
+            Gets or sets the imported <see cref="T:Microsoft.Xna.Framework.Content.Pipeline.Graphics.MeshContent" />.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DROccluderNodeContent.Occluder">
+      <summary>
+            Gets or sets the occluder.
+            </summary>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DROccluderNodeWriter">
+      <summary>
+            Writes a <see cref="T:DigitalRune.Graphics.Content.Pipeline.DROccluderNodeContent" /> to binary format that can be read by the 
+            <strong>OccluderNodeReader</strong> to load an <strong>OccluderNode</strong>.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DROccluderNodeWriter.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DROccluderNodeWriter</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DROccluderNodeWriter.GetRuntimeReader(Microsoft.Xna.Framework.Content.Pipeline.TargetPlatform)">
+      <summary>
+            Gets the assembly qualified name of the runtime loader for this type.
+            </summary>
+      <param name="targetPlatform">Name of the platform.</param>
+      <returns>Name of the runtime loader.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DROccluderNodeWriter.GetRuntimeType(Microsoft.Xna.Framework.Content.Pipeline.TargetPlatform)">
+      <summary>
+            Gets the assembly qualified name of the runtime target type.
+            </summary>
+      <param name="targetPlatform">The target platform.</param>
+      <returns>The qualified name.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DROccluderNodeWriter.Write(Microsoft.Xna.Framework.Content.Pipeline.Serialization.Compiler.ContentWriter,DigitalRune.Graphics.Content.Pipeline.DROccluderNodeContent)">
+      <summary>
+            Compiles a strongly typed object into binary format.
+            </summary>
+      <param name="output">The content writer serializing the value.</param>
+      <param name="value">The value to write.</param>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DROccluderWriter">
+      <summary>
+            Writes a <see cref="T:DigitalRune.Graphics.Content.Pipeline.DROccluderContent" /> to binary format that can be read by the
+            <strong>OccluderReader</strong> to load an <strong>Occluder</strong></summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DROccluderWriter.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DROccluderWriter</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DROccluderWriter.GetRuntimeReader(Microsoft.Xna.Framework.Content.Pipeline.TargetPlatform)">
+      <summary>
+            Gets the assembly qualified name of the runtime loader for this type.
+            </summary>
+      <param name="targetPlatform">Name of the platform.</param>
+      <returns>Name of the runtime loader.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DROccluderWriter.GetRuntimeType(Microsoft.Xna.Framework.Content.Pipeline.TargetPlatform)">
+      <summary>
+            Gets the assembly qualified name of the runtime target type.
+            </summary>
+      <param name="targetPlatform">The target platform.</param>
+      <returns>The qualified name.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DROccluderWriter.Write(Microsoft.Xna.Framework.Content.Pipeline.Serialization.Compiler.ContentWriter,DigitalRune.Graphics.Content.Pipeline.DROccluderContent)">
+      <summary>
+            Compiles a strongly typed object into binary format.
+            </summary>
+      <param name="output">The content writer serializing the value.</param>
+      <param name="value">The value to write.</param>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeContent">
+      <summary>
+            Stores the processed data for a <strong>SceneNode</strong> asset.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeContent.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeContent" /> class.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeContent.Children">
+      <summary>
+            Gets or sets the children of this node.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeContent.GetAncestors">
+      <summary>
+            Gets the ancestors of the given scene node.
+            </summary>
+      <returns>The ancestors of this scene node.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeContent.GetChildren">
+      <summary>
+            Gets the children of the given scene node.
+            </summary>
+      <returns>
+            The children of scene node or an empty <see cref="T:System.Collections.Generic.IEnumerable`1" /> if 
+            <see cref="P:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeContent.Children" /> is <see langword="null" />.
+            </returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeContent.GetDescendants">
+      <summary>
+            Gets the descendants of the given node using a depth-first search.
+            </summary>
+      <returns>
+            The descendants of this node in depth-first order.
+            </returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeContent.GetDescendants(System.Boolean)">
+      <summary>
+            Gets the descendants of the given node using a depth-first or a breadth-first search.
+            </summary>
+      <param name="depthFirst">
+            If set to <see langword="true" /> then a depth-first search for descendants will be made; 
+            otherwise a breadth-first search will be made.
+            </param>
+      <returns>
+            The descendants of this node.
+            </returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeContent.GetLeaves">
+      <summary>
+            Gets the leaves of the scene node.
+            </summary>
+      <returns>The leaves of the scene node.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeContent.GetRoot">
+      <summary>
+            Gets the root node.
+            </summary>
+      <returns>The root node.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeContent.GetSelfAndAncestors">
+      <summary>
+            Gets the scene node and its ancestors scene.
+            </summary>
+      <returns>The scene node and its ancestors of the scene.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeContent.GetSubtree">
+      <summary>
+            Gets the subtree (the given node and all of its descendants) using a depth-first 
+            search.
+            </summary>
+      <returns>
+            The subtree (the given node and all of its descendants) in depth-first order.
+            </returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeContent.GetSubtree(System.Boolean)">
+      <summary>
+            Gets the subtree (the given node and all of its descendants) using a depth-first or a 
+            breadth-first search.
+            </summary>
+      <param name="depthFirst">
+            If set to <see langword="true" /> then a depth-first search for descendants will be made; 
+            otherwise a breadth-first search will be made.
+            </param>
+      <returns>
+            The subtree (the given node and all of its descendants).
+            </returns>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeContent.LodDistance">
+      <summary>
+            Gets or sets the LOD distance.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeContent.LodLevel">
+      <summary>
+            Gets or sets the LOD level.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeContent.MaxDistance">
+      <summary>
+            Gets or sets the maximum distance up to which the scene node is rendered.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeContent.Name">
+      <summary>
+            Gets or sets the name.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeContent.Parent">
+      <summary>
+            Gets or sets the parent of this node.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeContent.PoseLocal">
+      <summary>
+            Gets or sets the pose (position and orientation) relative to the parent node.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeContent.PoseWorld">
+      <summary>
+            Gets or sets the pose (position and orientation) relative to world space.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeContent.ScaleLocal">
+      <summary>
+            Gets or sets the scale.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeContent.UserData">
+      <summary>
+            Gets or sets a user-defined tag object.
+            </summary>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeWriter">
+      <summary>
+            Writes a <see cref="T:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeContent" /> to binary format that can be read by 
+            <strong>SceneNodeReader</strong> to load a <strong>SceneNode</strong>.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeWriter.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DRSceneNodeWriter</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeWriter.GetRuntimeReader(Microsoft.Xna.Framework.Content.Pipeline.TargetPlatform)">
+      <summary>
+            Gets the assembly qualified name of the runtime loader for this type.
+            </summary>
+      <param name="targetPlatform">Name of the platform.</param>
+      <returns>Name of the runtime loader.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeWriter.GetRuntimeType(Microsoft.Xna.Framework.Content.Pipeline.TargetPlatform)">
+      <summary>
+            Gets the assembly qualified name of the runtime target type.
+            </summary>
+      <param name="targetPlatform">The target platform.</param>
+      <returns>The qualified name.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRSceneNodeWriter.Write(Microsoft.Xna.Framework.Content.Pipeline.Serialization.Compiler.ContentWriter,DigitalRune.Graphics.Content.Pipeline.DRSceneNodeContent)">
+      <summary>
+            Compiles a strongly typed object into binary format.
+            </summary>
+      <param name="output">The content writer serializing the value.</param>
+      <param name="value">The value to write.</param>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DRSubmeshContent">
+      <summary>
+            Stores the processed data for a <strong>Submesh</strong> asset.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRSubmeshContent.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DRSubmeshContent</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRSubmeshContent.ExternalMaterial">
+      <summary>
+            Gets or sets the external material of this submesh.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRSubmeshContent.IndexBuffer">
+      <summary>
+            Gets or sets the index buffer associated with this submesh.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRSubmeshContent.LocalMaterial">
+      <summary>
+            Gets or sets the local material of this submesh, which is used if the model description (XML
+            file) is missing or incomplete.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRSubmeshContent.MorphTargets">
+      <summary>
+            Gets or sets the morph targets associated with this submesh.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRSubmeshContent.PrimitiveCount">
+      <summary>
+            Gets or sets the number of primitives to render for this submesh.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRSubmeshContent.StartIndex">
+      <summary>
+            Gets or sets the location in the index buffer at which to start reading vertices.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRSubmeshContent.StartVertex">
+      <summary>
+            Gets or sets the index of the first vertex in the vertex buffer that belongs to this submesh
+            (a.k.a base vertex or vertex offset).
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRSubmeshContent.UserData">
+      <summary>
+            Gets or sets a user-defined object.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRSubmeshContent.VertexBuffer">
+      <summary>
+            Gets or sets the vertex buffer associated with this submesh.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRSubmeshContent.VertexCount">
+      <summary>
+            Gets or sets the number of vertices used in this submesh.
+            </summary>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DRSubmeshWriter">
+      <summary>
+            Writes a <see cref="T:DigitalRune.Graphics.Content.Pipeline.DRSubmeshContent" /> to binary format that can be read by the
+            <strong>SubmeshReader</strong> to load a <strong>Submesh</strong>.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRSubmeshWriter.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DRSubmeshWriter</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRSubmeshWriter.GetRuntimeReader(Microsoft.Xna.Framework.Content.Pipeline.TargetPlatform)">
+      <summary>
+            Gets the assembly qualified name of the runtime loader for this type.
+            </summary>
+      <param name="targetPlatform">Name of the platform.</param>
+      <returns>Name of the runtime loader.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRSubmeshWriter.GetRuntimeType(Microsoft.Xna.Framework.Content.Pipeline.TargetPlatform)">
+      <summary>
+            Gets the assembly qualified name of the runtime target type.
+            </summary>
+      <param name="targetPlatform">The target platform.</param>
+      <returns>The qualified name.</returns>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRSubmeshWriter.Write(Microsoft.Xna.Framework.Content.Pipeline.Serialization.Compiler.ContentWriter,DigitalRune.Graphics.Content.Pipeline.DRSubmeshContent)">
+      <summary>
+            Compiles a strongly typed object into binary format.
+            </summary>
+      <param name="output">The content writer serializing the value.</param>
+      <param name="value">The value to write.</param>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DRTextureFormat">
+      <summary>
+            Defines the texture format.
+            </summary>
+    </member>
+    <member name="F:DigitalRune.Graphics.Content.Pipeline.DRTextureFormat.NoChange">
+      <summary>
+            The texture format of the input texture is not changed by the content processor.
+            </summary>
+    </member>
+    <member name="F:DigitalRune.Graphics.Content.Pipeline.DRTextureFormat.Color">
+      <summary>
+            The texture format of the input texture is converted to <strong>SurfaceFormat.Color</strong>
+            (32-bit ARGB format with alpha, 8 bits per channel) by the content processor.
+            </summary>
+    </member>
+    <member name="F:DigitalRune.Graphics.Content.Pipeline.DRTextureFormat.Dxt">
+      <summary>
+            The texture format of the input texture is converted to an appropriate DXT compression by 
+            the content processor. (If the input texture contains fractional alpha values, it is 
+            converted to DXT5 format; otherwise it is converted to DXT1.)
+            </summary>
+    </member>
+    <member name="F:DigitalRune.Graphics.Content.Pipeline.DRTextureFormat.Normal">
+      <summary>
+            The texture format of the input texture is converted to DXT5nm by the content processor.
+            (This format reduces compression artifacts when storing normal maps. The x-component of the
+            normal is stored in the Alpha channel and the y-component is stored in the Green channel.
+            The z-component needs to be reconstructed in the pixel shader.)
+            </summary>
+    </member>
+    <member name="F:DigitalRune.Graphics.Content.Pipeline.DRTextureFormat.NormalInvertY">
+      <summary>
+            The texture format of the input texture is converted to DXT5nm by the content processor.
+            (This format reduces compression artifacts when storing normal maps. The x-component of the
+            normal is stored in the Alpha channel and the <strong>inverted</strong> y-component is 
+            stored in the Green channel. The z-component needs to be reconstructed in the pixel shader.)
+            </summary>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DRTextureImporter">
+      <summary>
+            Provides methods for reading texture files for use in the Content Pipeline. 
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRTextureImporter.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DRTextureImporter</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRTextureImporter.Import(System.String,Microsoft.Xna.Framework.Content.Pipeline.ContentImporterContext)">
+      <summary>
+            Called by the XNA Framework when importing an texture file to be used as a game asset. This
+            is the method called by the XNA Framework when an asset is to be imported into an object
+            that can be recognized by the Content Pipeline.
+            </summary>
+      <param name="filename">Name of a game asset file.</param>
+      <param name="context">
+            Contains information for importing a game asset, such as a logger interface.
+            </param>
+      <returns>Resulting game asset.</returns>
+    </member>
+    <member name="T:DigitalRune.Graphics.Content.Pipeline.DRTextureProcessor">
+      <summary>
+            Processes a model texture.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRTextureProcessor.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>DigitalRune.Graphics.Content.Pipeline.DRTextureProcessor</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRTextureProcessor.ColorKeyColor">
+      <summary>
+            Gets or sets the color used when color keying for a texture is enabled. When color keying, 
+            all pixels of a specified color are replaced with transparent black.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRTextureProcessor.ColorKeyEnabled">
+      <summary>
+            Gets or sets a value indicating whether color keying of a texture is enabled.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRTextureProcessor.Format">
+      <summary>
+            Gets or sets the texture format of output.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRTextureProcessor.GenerateMipmaps">
+      <summary>
+            Gets or sets a value indicating whether a full chain of mipmaps is generated from the input 
+            texture. Existing mipmaps of the texture are not replaced.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRTextureProcessor.InputGamma">
+      <summary>
+            Gets or sets the gamma of the input texture.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRTextureProcessor.OutputGamma">
+      <summary>
+            Gets or sets the gamma of the output texture.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRTextureProcessor.PremultiplyAlpha">
+      <summary>
+            Gets or sets a value indicating whether the texture is converted to premultiplied alpha format.
+            </summary>
+    </member>
+    <member name="M:DigitalRune.Graphics.Content.Pipeline.DRTextureProcessor.Process(Microsoft.Xna.Framework.Content.Pipeline.Graphics.TextureContent,Microsoft.Xna.Framework.Content.Pipeline.ContentProcessorContext)">
+      <summary>
+            Processes a texture.
+            </summary>
+      <param name="input">The texture content to process.</param>
+      <param name="context">Context for the specified processor.</param>
+      <returns>The converted texture content.</returns>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="input" /> or <paramref name="context" /> is <see langword="null" />.
+            </exception>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRTextureProcessor.ReferenceAlpha">
+      <summary>
+            Gets or sets the reference alpha value, which is used in the alpha test.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRTextureProcessor.ResizeToPowerOfTwo">
+      <summary>
+            Gets or sets a value indicating whether the texture is resized to the next largest power of 
+            two.
+            </summary>
+    </member>
+    <member name="P:DigitalRune.Graphics.Content.Pipeline.DRTextureProcessor.ScaleAlphaToCoverage">
+      <summary>
+            Gets or sets a value indicating whether the alpha of the lower mipmap levels should be 
+            scaled to achieve the same alpha test coverage as in the source image.
+            </summary>
+    </member>
+  </members>
+</doc>

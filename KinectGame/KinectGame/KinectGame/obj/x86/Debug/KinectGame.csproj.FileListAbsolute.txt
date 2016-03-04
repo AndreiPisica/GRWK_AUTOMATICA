@@ -1,0 +1,120 @@
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\SpriteFont1.xnb
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\KinectGame.exe
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\KinectGame.pdb
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\AppLibrary.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Animation.Content.Pipeline.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Animation.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Game.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Game.Input.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Game.UI.Content.Pipeline.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Game.UI.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Geometry.Content.Pipeline.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Geometry.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Graphics.Content.Pipeline.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Graphics.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Mathematics.Content.Pipeline.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Mathematics.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Particles.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Physics.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Physics.Specialized.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.ServiceLocation.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Microsoft.Kinect.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Microsoft.Xna.Framework.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Microsoft.Xna.Framework.Game.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Microsoft.Xna.Framework.Avatar.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Microsoft.Xna.Framework.Content.Pipeline.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Microsoft.Xna.Framework.Video.dll
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\AppLibrary.pdb
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Animation.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Animation.Content.Pipeline.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Game.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Game.Input.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Game.UI.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Game.UI.Content.Pipeline.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Geometry.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Geometry.Content.Pipeline.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Graphics.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Graphics.Content.Pipeline.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Mathematics.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Mathematics.Content.Pipeline.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Particles.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Physics.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.Physics.Specialized.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\DigitalRune.ServiceLocation.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Microsoft.Kinect.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Microsoft.Xna.Framework.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Microsoft.Xna.Framework.Game.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Microsoft.Xna.Framework.Avatar.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Microsoft.Xna.Framework.Content.Pipeline.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Microsoft.Xna.Framework.Video.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\obj\x86\Debug\KinectGame.exe
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\obj\x86\Debug\KinectGame.pdb
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\Sandbox\Sandbox.xnb
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\Sandbox\Sandboxx.xnb
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\Sandbox\Sandbox_0.xnb
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\obj\x86\Debug\KinectGame.csprojResolveAssemblyReference.cache
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\SixthModel\SecondModel.xnb
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\SixthModel\ModelDiffuseMap.xnb
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\SixthModel\ModelNormalsMap.xnb
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\SixthModel\ModelSpecularMap.xnb
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\ModelDiffuseMap_0.xnb
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Console.xnb
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Default.xnb
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\UITexture.xnb
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Theme.xnb
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Cursors\Arrow.cur
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Cursors\Cross.cur
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Cursors\IBeam.cur
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Cursors\SizeAll.cur
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Cursors\SizeNESW.cur
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Cursors\SizeNS.cur
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Cursors\SizeNWSE.cur
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Cursors\SizeWE.cur
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Cursors\Unavailable.cur
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Cursors\Wait.ani
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Console.xnb
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Default.xnb
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\UITexture.xnb
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Theme.xnb
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\DejaVuSans.xnb
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\DejaVuSanss.xnb
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Cursors\Arrow.cur
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Cursors\Cross.cur
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Cursors\IBeam.cur
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Cursors\SizeAll.cur
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Cursors\SizeNESW.cur
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Cursors\SizeNS.cur
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Cursors\SizeNWSE.cur
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Cursors\SizeWE.cur
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Cursors\Unavailable.cur
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Cursors\Wait.ani
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\SpriteFont1.spritefont
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\Sandbox\Sandbox.fbx
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\Sandbox\Sandbox.png
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\SixthModel\ModelDiffuseMap.tga
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\SixthModel\ModelNormalsMap.tga
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\SixthModel\ModelSpecularMap.tga
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\SixthModel\SecondModel.FBX
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Console.spritefont
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Default.spritefont
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\Theme.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\Aero\UITexture.png
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Console.spritefont
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Default.spritefont
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\DejaVuSans.bmp
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\Theme.xml
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Content\UI Theme\BlendBlue\UITexture.png
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\obj\x86\Debug\KinectGame.csproj.ResolveComReference.cache
+D:\College\anul 4\Licenta\KinectGame\KinectGame\KinectGame\bin\x86\Debug\Microsoft.Speech.dll
